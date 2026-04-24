@@ -1,0 +1,98 @@
+:root {
+    --primary-blue: #007bff;
+    --light-blue: #e3f2fd;
+    --medium-blue: #2196f3;
+    --dark-blue: #0d47a1;
+    --light-gray: #f5f5f5;
+    --medium-gray: #9e9e9e;
+    --dark-gray: #424242;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    justify-content: center;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--dark-blue);
+    color: var(--light-gray);
+}
+
+.header-blue {
+    background-color: var(--medium-blue) !important;
+    color: var(--white) !important;
+}
+
+body.dark-mode .header-blue {
+    background-color: var(--dark-blue) !important;
+    color: var(--white) !important;
+}
+
+.card {
+    background-color: var(--white);
+    border-color: var(--light-blue);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.card:focus-within {
+    outline: 2px solid var(--primary-blue);
+}
+
+.btn:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-outline-primary {
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+body.dark-mode .card {
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    border-color: var(--medium-blue);
+}
+
+body.dark-mode .btn-outline-primary {
+    color: var(--light-blue);
+    border-color: var(--light-blue);
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+.card-img-top {
+    border-bottom: 1px solid var(--light-blue);
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: #ffffff;
+    color: #333;
+}
